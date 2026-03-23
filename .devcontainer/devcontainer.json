@@ -1,5 +1,5 @@
 {
-  "name": "My First Website",
+  "name": "Internettechnologien",
   "build": {
     "dockerfile": "../Dockerfile",
     "context": ".."
