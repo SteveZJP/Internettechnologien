@@ -1,11 +1,64 @@
-header {
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px; /*aussenabstand */
+  padding: 20px; /*innenabstand */
 }
 
-erfassen {
+.header {
+  background-color: #303e4e;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-suchen {
+.section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-uebersicht {
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 140px;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons {
+  background-color: #437eb4;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #eaeaea;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(250, 235, 215, 0.481);
 }

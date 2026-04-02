@@ -11,17 +11,17 @@
       <h1>Personalverwaltung</h1>
     </div>
 
-    <div class="erfassen">
+    <div class="section">
       <h2>Neuen Mitarbeiter erfassen</h2>
-      Vorname:
+      <label>Vorname:</label>
       <input type="text" name="vorname" size="30" maxlength="30" /><br />
-      Nachname:
+      <label>Nachname:</label>
       <input type="text" name="nachname" size="30" maxlength="30" /><br />
-      Adresse:
+      <label>Adresse:</label>
       <input type="text" name="adresse" size="30" maxlength="30" /><br />
-      Größe (cm):
+      <label>Größe (cm):</label>
       <input type="number" name="groesse" min="40" max="300" step="1" /><br />
-      Gewicht (kg):
+      <label>Gewicht (kg):</label>
       <input
         type="number"
         name="gewicht"
@@ -30,16 +30,17 @@
         step="0.1"
         pattern="[0-9]{3}"
       /><br />
-      <button>Mitarbeiter hinzufügen</button>
+      <label>BMI:</label><input type="number" name="bmi" readonly /><br />
+      <button class="buttons">Mitarbeiter hinzufügen</button>
     </div>
 
-    <div class="suchen">
+    <div class="section">
       <h2>Mitarbeiter suchen</h2>
       Mitarbeiter-ID: <input type="number" name="mitID" pattern="[0-9]{3}" />
-      <button>Mitarbeiter laden</button>
+      <button class="buttons">Mitarbeiter laden</button>
     </div>
 
-    <div class="uebersicht">
+    <div class="section">
       <h2>Mitarbeiterübersicht</h2>
       <table border="1">
         <thead>
