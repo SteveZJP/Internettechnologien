@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Personalverwaltung</h1>
+    </div>
+
+    <div class="erfassen">
+      <h2>Neuen Mitarbeiter erfassen</h2>
+      Vorname:
+      <input type="text" name="vorname" size="30" maxlength="30" /><br />
+      Nachname:
+      <input type="text" name="nachname" size="30" maxlength="30" /><br />
+      Adresse:
+      <input type="text" name="adresse" size="30" maxlength="30" /><br />
+      Größe (cm):
+      <input type="number" name="groesse" min="40" max="300" step="1" /><br />
+      Gewicht (kg):
+      <input
+        type="number"
+        name="gewicht"
+        min="30"
+        max="200"
+        step="0.1"
+        pattern="[0-9]{3}"
+      /><br />
+      <button>Mitarbeiter hinzufügen</button>
+    </div>
+
+    <div class="suchen">
+      <h2>Mitarbeiter suchen</h2>
+      Mitarbeiter-ID: <input type="number" name="mitID" pattern="[0-9]{3}" />
+      <button>Mitarbeiter laden</button>
+    </div>
+
+    <div class="uebersicht">
+      <h2>Mitarbeiterübersicht</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Adresse</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anna</td>
+            <td>Müller</td>
+            <td>Musterstraße 1, Kempten</td>
+          </tr>
+          <tr>
+            <td>Max</td>
+            <td>Schneider</td>
+            <td>Bahnhofstraße 12, Ulm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
