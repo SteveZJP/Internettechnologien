@@ -9,45 +9,94 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Mitarbeiterverwaltung</title>
   </head>
-  <body>
-    <div class="">
+  <body class="bg-light container-fluid mt-3 mb-3">
+    <div class="bg-primary p-3 rounded-3 text-white">
       <h1>Personalverwaltung</h1>
     </div>
 
-    <div class="">
+    <div class="card p-3 mt-4 rounded-3">
       <h2>Neuen Mitarbeiter erfassen</h2>
-      <label>Vorname:</label>
-      <input type="text" name="vorname" size="30" maxlength="30" /><br />
-      <label>Nachname:</label>
-      <input type="text" name="nachname" size="30" maxlength="30" /><br />
-      <label>Adresse:</label>
-      <input type="text" name="adresse" size="30" maxlength="30" /><br />
-      <label>Größe (cm):</label>
-      <input type="number" name="groesse" min="40" max="300" step="1" /><br />
-      <label>Gewicht (kg):</label>
-      <input
-        type="number"
-        name="gewicht"
-        min="30"
-        max="200"
-        step="0.1"
-        pattern="[0-9]{3}"
-      /><br />
-      <label>BMI:</label><input type="number" name="bmi" readonly /><br />
-      <button class="">Mitarbeiter hinzufügen</button>
+      <div class="row mb-2">
+        <label class="col-lg-2">Vorname:</label>
+        <input
+          class="col-lg-3 rounded-2"
+          type="text"
+          name="vorname"
+          size="30"
+          maxlength="30"
+        />
+      </div>
+      <div class="row mb-2">
+        <label class="col-lg-2">Nachname:</label>
+        <input
+          class="col-lg-3 rounded-2"
+          type="text"
+          name="nachname"
+          size="30"
+          maxlength="30"
+        />
+      </div>
+      <div class="row mb-2">
+        <label class="col-lg-2">Adresse:</label>
+        <input
+          class="col-lg-3 rounded-2"
+          type="text"
+          name="adresse"
+          size="30"
+          maxlength="30"
+        />
+      </div>
+      <div class="row mb-2">
+        <label class="col-lg-2">Größe (cm):</label>
+        <input
+          class="col-lg-3 rounded-2"
+          type="number"
+          name="groesse"
+          min="40"
+          max="300"
+          step="1"
+        />
+      </div>
+      <div class="row mb-2">
+        <label class="col-lg-2">Gewicht (kg):</label>
+        <input
+          class="col-lg-3 rounded-2"
+          type="number"
+          name="gewicht"
+          min="30"
+          max="200"
+          step="0.1"
+          pattern="[0-9]{3}"
+        />
+      </div>
+      <div class="row mb-2">
+        <label class="col-lg-2">BMI:</label>
+        <input class="col-lg-3 rounded-2" type="number" name="bmi" readonly />
+      </div>
+      <button class="btn btn-primary col-lg-2">Mitarbeiter hinzufügen</button>
     </div>
 
-    <div class="">
+    <div class="card p-3 mt-4 rounded-3">
       <h2>Mitarbeiter suchen</h2>
-      Mitarbeiter-ID: <input type="number" name="mitID" pattern="[0-9]{3}" />
-      <button class="">Mitarbeiter laden</button>
+      <div class="row mb-2">
+        <label class="col-lg-2">Mitarbeiter-ID: </label>
+        <input
+          class="col-lg-3 rounded-2"
+          type="number"
+          name="mitID"
+          pattern="[0-9]{3}"
+        />
+        <button class="btn btn-primary col-lg-2 ms-1 rounded-2">
+          Mitarbeiter laden
+        </button>
+      </div>
     </div>
 
-    <div class="">
+    <div class="card p-3 mt-4 rounded-3">
       <h2>Mitarbeiterübersicht</h2>
-      <table border="1">
+      <table class="table table-striped">
         <thead>
           <tr>
             <th>Vorname</th>
