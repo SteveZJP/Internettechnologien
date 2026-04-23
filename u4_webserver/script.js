@@ -38,9 +38,12 @@ async function getAllEmployees() {
     const tableBody = document.getElementById("tableBody");
 
     data.forEach((element) => {
-      let name = element.name.split(" ");
-      let firstname = name[0];
-      let lastname = name[1];
+      //let name = element.name.split(" ");
+      //let firstname = name[0];
+      //let lastname = name[1];
+
+      let firstname = element.name.split(" ")[0];
+      let lastname = element.name.split(" ")[1];
 
       tableBody.innerHTML += `
       <tr>
