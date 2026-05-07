@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const db = require("./kw19_db/usedatabase.js");
+const db = require("./usedatabase.js");
 
 const port = 3000;
 

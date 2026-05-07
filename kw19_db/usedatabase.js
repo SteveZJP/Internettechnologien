@@ -1,6 +1,6 @@
 const sqlite3 = require("sqlite3");
 
-const dbsource = "./kw19_db/patienten.db";
+const dbsource = "./patienten.db";
 
 let db = new sqlite3.Database(dbsource, (err) => {
   if (err) {
