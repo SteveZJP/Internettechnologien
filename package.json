@@ -1,29 +1,8 @@
 {
-  "name": "internettechnologien",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/SteveZJP/Internettechnologien#readme",
-  "bugs": {
-    "url": "https://github.com/SteveZJP/Internettechnologien/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SteveZJP/Internettechnologien.git"
-  },
-  "license": "ISC",
-  "author": "Stefan Zacheo",
-  "type": "module",
-  "main": "kw17_webserver/server.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
     "bootstrap": "^5.3.8",
     "cors": "^2.8.6",
-    "express": "^5.2.1"
-  },
-  "devDependencies": {}
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  }
 }

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="container">
+    <div>
+      <h1>Patient auslesen</h1>
+      <p>Bitte ID eingeben:</p>
+      <input type="text" id="id" />
+
+      <p>Nachname:</p>
+      <input type="text" readonly id="nachname" />
+      <p>Vorname:</p>
+      <input type="text" readonly id="vorname" />
+      <button onclick="holeDaten()" class="btn btn-primary">klick mich</button>
+    </div>
+    <div>
+      <h1>Patient anlegen</h1>
+      <p>Nachname:</p>
+      <input type="text" id="nachnameNeu" />
+      <p>Vorname:</p>
+      <input type="text" id="vornameNeu" />
+      <button onclick="legePatientAn()" class="btn btn-success">
+        Patient anlegen
+      </button>
+    </div>
+  </body>
+</html>
